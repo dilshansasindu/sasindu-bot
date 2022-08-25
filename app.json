@@ -1,0 +1,24 @@
+{
+  "name": "DilshanBot MD V2",
+  "description": "whatsapp md bot build with nodejs",
+  "repository": "https://i.ibb.co/qWdD4cC/Screenshot-20220805-235207-UC-Browser.jpg",
+  "logo": "",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "VIHANGAMDV2", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
